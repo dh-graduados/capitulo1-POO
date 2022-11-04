@@ -1,0 +1,29 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:POO": "ts-node src/01-POO/index.ts",
+    "start:ENCAPSULAMIENTO": "ts-node  src/02-Encapsulamiento/index.ts",
+    "start:HERENCIA": "ts-node  src/03-Herencia/index.ts",
+    "start:POLIMORFISMO": "ts-node  src/04-Polimorfismo/index.ts",
+    "start:ABSTRACTAS": "ts-node  src/05-ClasesAbstractas/index.ts",
+    "lint": "eslint ./src --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
+    "eslint": "^8.26.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.4.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "ts-node": "10.9.1",
+    "tsc": "2.0.4",
+    "typescript": "4.8.4"
+  }
+}
