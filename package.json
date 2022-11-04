@@ -9,6 +9,7 @@
     "start:HERENCIA": "ts-node  src/03-Herencia/index.ts",
     "start:POLIMORFISMO": "ts-node  src/04-Polimorfismo/index.ts",
     "start:ABSTRACTAS": "ts-node  src/05-ClasesAbstractas/index.ts",
+    "start:INTERFACES": "ts-node  src/06-Interfaces/index.ts",
     "lint": "eslint ./src --fix"
   },
   "keywords": [],
