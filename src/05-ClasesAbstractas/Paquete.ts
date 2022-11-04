@@ -1,3 +1,5 @@
+const DESTINOS_CON_TRASLADOS = ['Miami', 'Calafate']
+
 export abstract class Paquete {
   private destino: string
 
@@ -6,6 +8,7 @@ export abstract class Paquete {
   }
 
   abstract requierePasaporte (): boolean
+  abstract requiereTraslado () :boolean
 
   obtenerDestino () {
     return this.destino
@@ -19,15 +22,15 @@ export abstract class Paquete {
     return 'No requiere pasaporte para el viaje.'
   }
 
-  requiereTraslado (): boolean {
-    return true
-  }
-
   validarTraslado () {
     if (this.requiereTraslado()) {
       return 'Su paquete requiere traslado'
     }
 
     return 'Su paquete no requiere traslado.'
+  }
+
+  protected destinoConTraslado () {
+    return DESTINOS_CON_TRASLADOS.includes(this.obtenerDestino())
   }
 }

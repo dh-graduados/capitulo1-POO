@@ -13,11 +13,23 @@ export class Paquete {
     return true
   }
 
+  requiereTraslado (): boolean {
+    return true
+  }
+
   validarPasaporte () {
     if (this.requierePasaporte()) {
       return 'Usted debe validar su pasaporte'
     }
 
     return 'No requiere pasaporte para el viaje.'
+  }
+
+  validarTraslado () {
+    if (this.requiereTraslado()) {
+      return 'Su paquete requiere traslado.'
+    }
+
+    return 'Su paquete no requiere traslado.'
   }
 }

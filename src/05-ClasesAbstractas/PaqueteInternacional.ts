@@ -1,6 +1,4 @@
 import { Paquete } from './Paquete'
-const DESTINOS_CON_TRASLADOS = ['Miami', 'Calafate']
-
 export class PaqueteInternacional extends Paquete {
   constructor (destino: string) {
     super(destino)
@@ -11,6 +9,6 @@ export class PaqueteInternacional extends Paquete {
   }
 
   requiereTraslado (): boolean {
-    return DESTINOS_CON_TRASLADOS.includes(this.obtenerDestino())
+    return this.destinoConTraslado()
   }
 }
